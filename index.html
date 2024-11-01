@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact US</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <section class="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <!-- Contact Head -->
+          <div class="contact-head">
+            <h1 class="contact-heading">Contact US</h1>
+            <p class="contact-desc">
+              Any question or remarks? Just write us a message!
+            </p>
+          </div>
+
+          <!-- Contact Body -->
+          <div class="contact-body">
+            <!-- Form info -->
+            <div class="form-info">
+              <h2 class="form-info__heading">Contact Information</h2>
+              <p class="form-info__desc">
+                Fill up the form and our Team will get back to you within 24
+                hours.
+              </p>
+
+              <div class="form-info__row">
+                <i class="form-info__icon fa-solid fa-phone"></i>
+                <a href="tel:+012345678910" class="form-info__info"
+                  >+0123 4567 8910</a
+                >
+              </div>
+
+              <div class="form-info__row">
+                <i class="form-info__icon fa-solid fa-envelope"></i>
+                <a href="mailto:hello@gmail.com" class="form-info__info"
+                  >hello@gmail.com</a
+                >
+              </div>
+
+              <div class="form-info__row">
+                <i class="form-info__icon fa-solid fa-location-dot"></i>
+                <span class="form-info__info">102 Stret 2714 Don</span>
+              </div>
+
+              <div class="form-social__list">
+                <a href="#!" class="form-social__item-link">
+                  <i class="form-social__item-icon fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#!" class="form-social__item-link">
+                  <i class="form-social__item-icon fa-brands fa-twitter"></i>
+                </a>
+                <a href="#!" class="form-social__item-link">
+                  <i class="form-social__item-icon fa-brands fa-instagram"></i>
+                </a>
+                <a href="#!" class="form-social__item-link">
+                  <i
+                    class="form-social__item-icon fa-brands fa-linkedin-in"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <form
+              action="https://api-gateway.fullstack.edu.vn/action_page.php"
+              method="POST"
+              autocomplete="off"
+              class="form-contact"
+            >
+              <div class="form-contact__input-wrap">
+                <div class="form-row">
+                  <div class="form-ground">
+                    <label class="form-label" for="first-name">
+                      First Name
+                    </label>
+                    <input
+                      class="input-fill"
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      placeholder="Enter First Name"
+                      required
+                      minlength="2"
+                    />
+                    <p class="form-error">
+                      Enter this field, minimum 2 characters
+                    </p>
+                  </div>
+
+                  <div class="form-ground">
+                    <label class="form-label" for="last-name">Last Name</label>
+                    <input
+                      class="input-fill"
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      placeholder="Enter Last Name"
+                      required
+                      minlength="2"
+                    />
+                    <p class="form-error">
+                      Enter this field, minimum 2 characters
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-ground">
+                    <label class="form-label" for="email">Email</label>
+                    <input
+                      class="input-fill"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Enter Email"
+                      required
+                      pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                    />
+                    <p class="form-error">Enter correct Email format</p>
+                  </div>
+
+                  <div class="form-ground">
+                    <label class="form-label" for="tel">Phone</label>
+                    <input
+                      class="input-fill"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="Enter Phone"
+                      required
+                      pattern="^(0|\+?84)(3|5|7|8|9)[0-9]{8}$"
+                    />
+                    <p class="form-error">Enter correct phone number format</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Form Radio -->
+              <div class="form-contact__radio-wrap">
+                <div class="form-row">
+                  <div class="form-ground">
+                    <label for="" class="form-label form-label__l">
+                      What the of website do you need?
+                    </label>
+                    <!-- Form Radio List -->
+                    <div class="form-radio__list">
+                      <!-- Form Radio item 1 -->
+                      <div class="form-radio__item">
+                        <input
+                          class="form-radio__input"
+                          type="radio"
+                          name="type"
+                          id="web-design"
+                          value="Web Design"
+                        />
+                        <label class="form-radio__label" for="web-design">
+                          Web Design
+                        </label>
+                      </div>
+
+                      <!-- Form Radio item 2 -->
+                      <div class="form-radio__item">
+                        <input
+                          class="form-radio__input"
+                          type="radio"
+                          name="type"
+                          id="web-development"
+                          value="Web Development"
+                        />
+                        <label class="form-radio__label" for="web-development">
+                          Web Development
+                        </label>
+                      </div>
+
+                      <!-- Form Radio item 3 -->
+                      <div class="form-radio__item">
+                        <input
+                          class="form-radio__input"
+                          type="radio"
+                          name="type"
+                          id="logo-design"
+                          value="ogo Design"
+                        />
+                        <label class="form-radio__label" for="logo-design">
+                          Logo Design
+                        </label>
+                      </div>
+
+                      <!-- Form Radio item 4 -->
+                      <div class="form-radio__item">
+                        <input
+                          class="form-radio__input"
+                          type="radio"
+                          name="type"
+                          id="other"
+                          value="Other"
+                          checked
+                        />
+                        <label class="form-radio__label" for="other">
+                          Other
+                        </label>
+                      </div>
+                    </div>
+                    <p class="form-error">Please select this field.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-contact__message-wrap">
+                <div class="form-row">
+                  <div class="form-ground">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="form-textarea"
+                      placeholder="Enter Message..."
+                      required
+                      minlength="10"
+                    ></textarea>
+                    <p class="form-error">
+                      Please enter content, minimum 10 characters.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button Submit -->
+              <div class="form-row form-submit">
+                <button type="submit" class="form-submit__btn">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
